@@ -1,0 +1,49 @@
+label > input[type="checkbox"],
+label > input[type="radio"] {
+    display: none;
+}
+
+label > span {
+    background-color: #FFF;
+    border: 2px solid #34495e;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    position: relative;
+}
+
+label > input[type="radio"] + span {
+    background-color: #FFF;
+    border: 2px solid #34495e;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    position: relative;
+    border-radius: 9px;
+}
+
+label > input[type="radio"]:checked + span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #34495e;
+    top: 2px;
+    left: 2px;
+}
+
+label > input[type="checkbox"]:checked + span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #34495e;
+    top: 2px;
+    left: 2px;
+}
+
+label > input[type="radio"]:checked + span:after {
+
+}
