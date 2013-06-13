@@ -43,7 +43,3 @@ label > input[type="checkbox"]:checked + span:after {
     top: 2px;
     left: 2px;
 }
-
-label > input[type="radio"]:checked + span:after {
-
-}
