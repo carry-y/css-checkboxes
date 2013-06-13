@@ -1,9 +1,10 @@
-label > input[type="checkbox"],
-label > input[type="radio"] {
+label.checkbox > input,
+label.radio > input {
     display: none;
 }
 
-label > span {
+label.checkbox > span,
+label.radio > span {
     background-color: #FFF;
     border: 2px solid #34495e;
     width: 9px;
@@ -12,35 +13,35 @@ label > span {
     position: relative;
 }
 
-label > input[type="radio"] + span {
-    background-color: #FFF;
-    border: 2px solid #34495e;
-    width: 9px;
-    height: 9px;
+label.checkbox:hover > span,
+label.radio:hover > span {
+    border-color: #3498db;
+}
+
+label.checkbox > input:checked + span:after,
+label.radio > input:checked + span:after {
+    content: '';
     display: inline-block;
-    position: relative;
+    width: 5px;
+    height: 5px;
+    background-color: #34495e;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+
+label.checkbox:hover > input:checked + span:after,
+label.radio:hover > input:checked + span:after {
+    background-color: #3498db;
+}
+
+label.checkbox:hover,
+label.radio:hover {
+    color: #3498db;
+    cursor: pointer;
+}
+
+label.rounded > span,
+label.rounded > span:after {
     border-radius: 9px;
-}
-
-label > input[type="radio"]:checked + span:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 5px;
-    height: 5px;
-    background-color: #34495e;
-    top: 2px;
-    left: 2px;
-    border-radius: 2px;
-}
-
-label > input[type="checkbox"]:checked + span:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 5px;
-    height: 5px;
-    background-color: #34495e;
-    top: 2px;
-    left: 2px;
 }
