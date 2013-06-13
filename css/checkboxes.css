@@ -1,47 +1,40 @@
 label.checkbox > input,
 label.radio > input {
-    display: none;
-}
+  display: none; }
 
 label.checkbox > span,
 label.radio > span {
-    background-color: #FFF;
-    border: 2px solid #34495e;
-    width: 9px;
-    height: 9px;
-    display: inline-block;
-    position: relative;
-}
+  background-color: #FFF;
+  border: 2px solid #2c3e50;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  position: relative; }
 
 label.checkbox:hover > span,
 label.radio:hover > span {
-    border-color: #3498db;
-}
+  border-color: #34495e; }
 
 label.checkbox > input:checked + span:after,
 label.radio > input:checked + span:after {
-    content: '';
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background-color: #34495e;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-}
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #2c3e50;
+  position: absolute;
+  left: 2px;
+  top: 2px; }
 
 label.checkbox:hover > input:checked + span:after,
 label.radio:hover > input:checked + span:after {
-    background-color: #3498db;
-}
+  background-color: #34495e; }
 
 label.checkbox:hover,
 label.radio:hover {
-    color: #3498db;
-    cursor: pointer;
-}
+  color: #34495e;
+  cursor: pointer; }
 
 label.rounded > span,
 label.rounded > span:after {
-    border-radius: 9px;
-}
+  border-radius: 9px; }
