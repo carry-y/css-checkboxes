@@ -1,3 +1,5 @@
+@import "variables";
+
 label {
     &.checkbox,
     &.radio {
@@ -10,7 +12,7 @@ label {
                     display: inline-block;
                     width: 5px;
                     height: 5px;
-                    background-color: #2c3e50;
+                    background-color: $accentColor;
                     position: absolute;
                     left: 2px;
                     top: 2px;
@@ -20,7 +22,7 @@ label {
 
         > span {
             background-color: #FFF;
-            border: 2px solid #2c3e50;
+            border: 2px solid $accentColor;
             width: 9px;
             height: 9px;
             display: inline-block;
@@ -28,17 +30,17 @@ label {
         }
 
         &:hover {
-            color: #34495e;
+            color: $hoverColor;
             cursor: pointer;
 
             > span {
-                border-color: #34495e;
+                border-color: $hoverColor;
             }
 
             > input {
                 &:checked {
                     + span:after {
-                        background-color: #34495e;
+                        background-color: $hoverColor;
                     }
                 }
             }
